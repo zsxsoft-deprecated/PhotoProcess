@@ -126,7 +126,7 @@ namespace PhotoProcess {
         private static bool FormatImage ( string strFile ) {
             FileStream fsFile = new FileStream(strFile, FileMode.Open);
             Image iSource = Image.FromStream(fsFile);
-            Bitmap bitDraw = new Bitmap(307, 437, PixelFormat.Format24bppRgb);
+            Bitmap bitDraw = new Bitmap(113, 149, PixelFormat.Format24bppRgb);
             Graphics gSource = Graphics.FromImage(bitDraw);
             ImageFormat tFormat = iSource.RawFormat;
             EncoderParameters ep = new EncoderParameters();
@@ -138,7 +138,7 @@ namespace PhotoProcess {
                 gSource.InterpolationMode = InterpolationMode.HighQualityBicubic;
                 gSource.SmoothingMode = SmoothingMode.HighQuality;
                 gSource.CompositingQuality = CompositingQuality.HighQuality;
-                gSource.DrawImage(iSource, new Rectangle(0, 0, 307, 437), new Rectangle(0, 0, iSource.Width, iSource.Height), GraphicsUnit.Pixel);
+                gSource.DrawImage(iSource, new Rectangle(0, 0, 113, 149), new Rectangle(0, 0, iSource.Width, iSource.Height), GraphicsUnit.Pixel);
                 gSource.Dispose();
                 ImageCodecInfo[] arrayICI = ImageCodecInfo.GetImageEncoders();
                 ImageCodecInfo jpegICIinfo = null;

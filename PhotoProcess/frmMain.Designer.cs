@@ -100,7 +100,7 @@
             this.chkPackImage.Name = "chkPackImage";
             this.chkPackImage.Size = new System.Drawing.Size(282, 16);
             this.chkPackImage.TabIndex = 5;
-            this.chkPackImage.Text = "照片批量转为jpg格式、20K以下、307 x 437像素";
+            this.chkPackImage.Text = "照片批量转为jpg格式、20K以下、113 x 149像素";
             this.chkPackImage.UseVisualStyleBackColor = true;
             // 
             // btnStart
